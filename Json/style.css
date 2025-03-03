@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #222, #444);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 310px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Subjects Taken Section */
+.subjects-taken {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.subjects-taken:hover {
+    transform: scale(1.02);
+}
+
+.subjects-taken h2 {
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+.subjects-taken h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #ffc107;
+    display: block;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.subjects-taken ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.subjects-taken ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    text-align: justify;
+    transition: transform 0.2s ease-in-out;
+}
+
+.subjects-taken th {
+    
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.subjects-taken ul li:hover {
+    transform: translateX(5px);
+    color: #ffc107;
+}
+
+
+/* Page Content */
+.page-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.page-content:hover {
+    transform: scale(1.02);
+}
+
+/* Circular Profile Image */
+.page-content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #383837;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.page-content img:hover {
+    transform: scale(1.1);
+}
+
+/* Typography */
+h2 {
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #ffc107;
+    display: block;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+/* Justified Text */
+.page-content p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 16px;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    text-align: justify;
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+    color: #ffc107;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: justify;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#contact p i {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}

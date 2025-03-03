@@ -1,0 +1,54 @@
+{
+  "courses": [
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT321",
+      "description": "Capstone Project and Research 1",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT322",
+      "description": "Integrative Programming and Technologies",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT323",
+      "description": "Application Development and Emerging Technologies",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT324",
+      "description": "Quantitative Methods",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "PICPE",
+      "description": "Philippine Indigenous Communities & Peace Education",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "FreeElec",
+      "description": "Foreign Language",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT325",
+      "description": "IT Elective 2",
+      "credit": "3.0"
+    }
+    
+  ]
+}
