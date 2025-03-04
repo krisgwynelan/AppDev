@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const url = "https://krisgwynelan.github.io/AppDev/Json/courses.json"; // Replace with your actual URL
+    const url = "https://krisgwynelan.github.io/AppDev/SubjectsTaken/courses.json"; // Replace with your actual URL
     const tableBody = document.getElementById("coursesTable");
     const searchInput = document.getElementById("searchInput");
 
