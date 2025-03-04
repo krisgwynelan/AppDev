@@ -82,6 +82,8 @@ body {
 }
 
 
+
+
 /* Heading Styling */
 .skills h2, .about h2 {
     font-size: 22px;
@@ -127,7 +129,7 @@ table {
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
-    text-align: center;
+    text-align: left;
 }
 
 /* 🏷 Table Header */
@@ -285,7 +287,7 @@ ul li:hover {
 
 .contact-right {
     text-align: right; 
-    margin-left: 40px;
+  
 }
 #contact h2 {
     margin-right: 200px;

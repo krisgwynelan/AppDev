@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const url = "https://krisgwynelan.github.io/AppDev/Json/courses.json"; // Replace with your GitHub Pages link
+    const url = "https://krisgwynelan.github.io/AppDev/Json/courses.json"; // Replace with your actual URL
+
+    const tableBody = document.getElementById("coursesTable");
+
+    if (!tableBody) {
+        console.error("Error: Element with ID 'coursesTable' not found. Check your HTML.");
+        return;  
+    }
 
     fetch(url)
         .then(response => {
@@ -9,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
         })
         .then(data => {
-            const tableBody = document.getElementById("coursesTable");
+            console.log("Fetched Data:", data); // Debug JSON response
+            if (!data.courses) {
+                console.error("Error: 'courses' array is missing in JSON.");
+                return;
+            }
 
             data.courses.forEach(course => {
                 const row = document.createElement("tr");

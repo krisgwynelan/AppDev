@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppDev CSS</title>
+    <title>AppDev Searchbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Curriculum Vitae</h1>
-        
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" placeholder="Search for a subject">
 
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#info-container">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#profile">Profile</a></li>
+                <li><a href="#subjects">Subjects Taken</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -67,7 +69,25 @@
                 <li><strong>Misamis Oriental General Comprehensive High School (JHS)</strong><br>2016-2020 | With Honors</li>
                 <li><strong>City Central School</strong><br>2010-2016</li>
             </ul>
-        </section>  
+        </section>
+
+        <!-- Subjects Taken Section -->
+        <section id="subjects">
+            <h2>Subjects Taken</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year Level</th>
+                        <th>Semester</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody id="coursesTable"></tbody>
+            </table>
+            
+        </section>
 
         <section id="contact">
             <h2>Contact Details</h2>
@@ -80,7 +100,7 @@
         
                 <!-- Right Side (New Information) -->
                 <div class="contact-right">
-                    <p><strong>Facebook:</strong> Kristiane Gwyn Elan</p>
+                    <p><strong>Facebook:</strong>Kristiane Gwyn E</p>
                     <p><strong>GitHub:</strong> krisgwynelan </p>
                 </div>
             </div>
