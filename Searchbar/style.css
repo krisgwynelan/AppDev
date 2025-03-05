@@ -272,6 +272,20 @@ ul li:hover {
     color: #ffc107;
 }
 
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+.menu-toggle {
+    display: none;
+}
+
+
 /* Contact Section */
 .contact-container {
     display: flex;
@@ -326,6 +340,49 @@ footer {
         align-items: center;
         width: 100%;
     }
+        /* Style for the navigation bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style for both sections */
+#skills, #about {
+    flex: 1;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the menu */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for menu items */
+.menu li {
+    display: inline;
+}
+
+/* Style for links */
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+    /* Hover effect */
+    .menu li a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
 
     nav ul {
         display: flex;
@@ -367,3 +424,40 @@ footer {
     }
 }
 
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: relative; /* Changed from absolute */
+        text-align: left;
+        padding: 10px 0;
+        transition: max-height 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .menu li {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #333;
+        text-align: left;
+    }
+
+    /* When menu is shown, push content down */
+    .menu.show {
+        display: flex;
+        max-height: 500px; /* Adjust this based on content */
+    }
+}
