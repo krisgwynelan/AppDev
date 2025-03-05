@@ -345,10 +345,7 @@ footer {
     background-color: #333;
     padding: 10px 0;
     text-align: center;
-    }
-    #profile h2 {
-        text-align: left;
-    }
+}
 
 /* Style for both sections */
 #skills, #about {
@@ -458,12 +455,9 @@ footer {
         text-align: left;
     }
 
-    /* When menu is shown, push content down */
+    
     .menu.show {
         display: flex;
-        max-height: 500px; /* Adjust this based on content */
+        max-height: 500px; 
     }
-    #profile h2 {
-        text-align: left;
-    }    
 }
