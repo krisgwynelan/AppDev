@@ -10,8 +10,7 @@
 
     <header>
         <h1>Curriculum Vitae</h1>
-        <!-- Search Bar -->
-        <input type="text" id="searchInput" placeholder="Search for a subject">
+
 
         <nav>
             <ul>
@@ -70,10 +69,13 @@
                 <li><strong>City Central School</strong><br>2010-2016</li>
             </ul>
         </section>
-
+        
         <!-- Subjects Taken Section -->
         <section id="subjects">
-            <h2>Subjects Taken</h2>
+            <div class="subjects-header">
+                <h2>Subjects Taken</h2>
+                <input type="text" id="searchInput" placeholder="Search for a subject...">
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -86,7 +88,6 @@
                 </thead>
                 <tbody id="coursesTable"></tbody>
             </table>
-            
         </section>
 
         <section id="contact">
